@@ -1,6 +1,7 @@
 // const app = fastify({
 const fastify = require('fastify')({ logger: true })
 const PORT = process.env.PORT || 5000
+require('dotenv').config()
 
 fastify.register(require('@fastify/swagger'), {
     exposeRoute: true,
@@ -14,7 +15,7 @@ fastify.register(require('@fastify/swagger'), {
 // fastify.register(dbConnector)
 fastify.register(require("@fastify/mongodb"), {
     forceClose: true,
-    url: 'mongodb://localhost:27017/tweepsbook'
+    url: process.env.MONGO_URL
 })
 // register routes
 
