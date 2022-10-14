@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "@fastify/auth": "^4.1.0",
+    "@fastify/mongodb": "^6.1.0",
+    "@fastify/swagger": "^8.0.0",
+    "bcrypt": "^5.1.0",
+    "config": "^3.3.8",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.8.1",
+    "fastify-plugin": "^4.3.0",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "name": "tweepsbook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
